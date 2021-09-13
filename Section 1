@@ -1,0 +1,279 @@
+// HTML FILE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="app1.js"></script>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tenetur ab. Dolores nostrum voluptatum accusamus incidunt illo hic consequatur dolorum necessitatibus obcaecati aliquam sequi voluptas, laborum dolore fuga reiciendis?
+    </p>
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, minus dolor molestias nulla molestiae recusandae itaque voluptas, incidunt in, id modi asperiores impedit! Repellat quisquam nemo quam fugit eius commodi.
+    </p>
+</body>
+</html>
+
+//JS FILE
+// const arr1 = [30,50,3,9,40]
+// const arr2 = new Array(80,20)
+// // const cus = ['Drashti','riya','swati','parth']
+// const anything = ['Drashti',3,null,undefined,false,{name:'Drashti',age:20},new Date()]
+// // console.log(anything)
+
+// // let val
+// // val = arr1.length
+// // //Check the given vales are in Array or not
+// // val = Array.isArray(arr1)
+// // //modifing the vales in Array
+// // arr1[2] = 'Last Array'
+// //Array Functions
+// //Manipulating the array
+// //Add to the end
+// arr1.push(300)
+// //Add to the front
+// arr1.unshift(10)
+// //Remove the end
+// arr1.pop()
+// //Removing from front
+// arr1.shift()
+// //at position 2 remove one item and add 'Hi','How are you'
+// // arr1.splice(0,1,'Hi','How are you')
+// arr1.splice(1,2)
+// //Reverse the array
+// arr1.reverse()
+// //Concat the array
+// val = arr1.concat(arr2)
+// //sortting the array
+// val = arr1.sort().reverse()
+// val = arr1.sort()
+// //sort with compare function
+// val = arr1.sort(function(a,b){
+//     return a-b
+// })
+// //Desending Sort 
+// val = arr1.sort(function(a,b){
+//     return b-a
+// })
+// //Find
+// function gt10(num){
+//     return num > 10
+// }
+// console.log(arr1)
+// val = arr1.find(gt10)
+// val = arr1.filter(gt10)
+// console.log(val)
+// let val
+// let d = new Date('08-09-2021')
+// val = d.getMonth()
+// console.log(val)
+// val = d.getDate()
+// console.log(val)
+// val = d.getDay()
+// console.log(val)
+// val = d.getFullYear()
+// console.log(val)
+// val = d.getHours()
+// console.log(val)
+// val = d.getMinutes()
+// console.log(val)
+// val = d.getMilliseconds()
+// console.log(val)
+// val = d.getTime()
+// console.log(val)
+// d.setMonth(0)
+// d.setDate(30)
+// d.setFullYear(2001)
+// console.log(d)
+
+//If Statement
+// let mark = '50'
+
+// //Abstract Equality comparision
+// // if (mark ==50) {
+// //     console.log('If mark is 50')
+// // }else{
+// //     console.log('If mark is not 50')
+// // }
+// //Strictly Equality Comaprison
+// // if (mark === 50) {
+// //     console.log('If mark is 50')
+// // }else{
+// //     console.log('If mark is not 50')
+// // }
+// //Check Undefined
+// if (typeof mark !== 'undefined'){
+//     console.log(`Mark is ${mark}`)
+// }else{
+//     console.log(`Mark is undefined`)
+// }
+// if (mark>=50){
+//     console.log('You are pass')
+// }else{
+//     console.log('You are fail')
+// }
+// //else if 
+// let hour = 12
+// if(hour< 12){
+//     console.log('Good morning')
+// } else if ( hour > 12){
+//     console.log('Good evening')
+// } else{
+//     console.log('Poor Day') 
+// }
+//Logical Operator
+// let mark = 100
+//And Operator
+// if (mark > 80){
+//     console.log('Excellent')
+// } else if (mark >= 50 && mark <= 80){
+//     console.log('Good')
+// } else{
+//     console.log('Fail')
+// }
+//Or Operator 
+// let hour = 19
+// let isWeekend =true
+// if(hour >=  20 || hour <= 12 || isWeekend ){
+//     console.log('Office is closed!!See you')
+// } else {
+//     console.log('Welcome')
+// }
+
+
+////Switch Case////
+// const fruit = "apple"
+// switch(fruit){
+//     case "orange":
+//         console.log('orange')
+//         break;
+//     case "apple":
+//         console.log('red')
+//         break;
+//     case "banana":
+//         console.log('yellow')
+//         break;
+//     default:
+//         console.log(`I don't know`)
+//         break;
+// }
+// let today = new Date().getDay()
+// switch (today) {
+//     case 0:
+//         console.log('Sunday')
+//         break;
+//     case 1:
+//         console.log('Monday')
+//         break;
+//     case 2:
+//         console.log('Tuesday')
+//         break;
+//     case 3:
+//         console.log('Wednesday')
+//         break;
+//     case 4:
+//         console.log('Thursday')
+//         break;
+//     case 5:
+//         console.log('Friday')
+//         break;
+//     case 6:
+//     console.log('Saturday')
+//     break;
+
+//     default:
+//         console.log('No day exists')
+//         break;
+// }
+
+//functions Declartion
+// function user(name,age,standard,school){
+//     return `My name is ${name}.I am ${age}years old.I study in ${standard}.My school name is ${school}`
+// }
+// console.log(user())
+
+//Function Expressions
+// const sum = function (x,y) {
+//     return x + y;    
+// }
+// console.log(sum(4,5))
+
+//IIFE 
+// (function () {
+//     var num = 3;
+//     console.log(num)
+// })()
+//For Loop
+// for (let i = 0;  i <= 10; i++) {
+//     console.log(i); 
+// }
+//While loop
+// let i = 0
+// while (i < 10) {
+//     console.log(i)
+//     i++;
+// }
+//do while
+// let j = 2
+// do {
+//     console.log(j)
+//     j++;
+// } while (j<10);
+
+//loops through array
+const users = ['Drashti','Swati','Riya']
+//For loop 
+// for (let i = 0; i < users.length; i++) {
+//     console.log(users[i]);
+    
+// }
+
+//For of
+// for (const user of users) {
+//     console.log(user)
+// }
+
+//for each
+// users.forEach(user => {
+//     console.log(user)
+// });
+// for in loops
+// const user = {
+//     name: 'Drashti',
+//     age: 20,
+//     title: 'Intern'
+// }
+// for (const key in user) {
+//     console.log(`${key}:${user[key]}`)
+//     }
+//Alert function 
+// alert('hii')
+
+//prompt
+// const name = prompt('What is your name?')
+// alert(`hello ${name}`)
+
+//Confirm
+// if(confirm('Are You Sure?')){
+//     alert('you are removed')
+// }else{
+//     alert('You are not removed')
+// }
+
+// Outer Width and Height
+
+let oh = window.outerHeight;
+let ow = window.outerWidth;
+console.log(oh,ow)
+
+// Inner Width and Height
+
+let ih = window.innerHeight;
+let iw = window.innerWidth;
+console.log(ih,iw)
