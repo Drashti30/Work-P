@@ -1,0 +1,56 @@
+/// Child NODE //
+// Html File
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body style="background-color: grey;">
+    <div class="container">
+        <div class="collection-header">
+            <h4 id="name-title" class="name-class">First Names</h4>
+        </div>
+        <ul class="collection  with-header">
+
+            <li class="collection-item">Alvin <a href="#!" class="secondary-content"><i
+                        class="material-icons">grade</i></a></li>
+
+            <li class="collection-item">Alvin <a href="#!" class="secondary-content"><i
+                        class="material-icons">grade</i></a></li>
+
+            <li class="collection-item">Alvin <a href="#!" class="secondary-content"><i
+                        class="material-icons">grade</i></a></li>
+
+            <li class="collection-item">Alvin <a href="#!" class="secondary-content"><i
+                        class="material-icons">grade</i></a></li>
+
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+// JS file
+// Query Selector - The querySelector() method returns the first element that matches a specified CSS selector(s) in the document.
+const list = document.querySelector('ul.collection')
+console.log('list',list)
+const listitem = document.querySelector('li.collection-item')
+console.log('list-item',listitem)
+// Nodes -  "Node" is an interface that is implemented by multiple other objects, including "document" and "element". 
+const nodes = document.querySelector('ul.collection').childNodes
+console.log('Nodes',nodes)
+// Type of the node
+console.log('node-type',nodes[0].nodeType)
+console.log('node-type',nodes[0].nodeName)
+console.log('node-type',nodes[1].nodeType)
+console.log('node-type',nodes[1].nodeName)
+const children = document.querySelector('ul.collection').children
+console.log('children',children)
